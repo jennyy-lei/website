@@ -1,0 +1,243 @@
+@media (min-width:320px) and (max-width:1400px) {
+  /* smartphones, iPhone, portrait 480x320 phones */
+
+  h1 {
+    font-size: 2.5rem;
+  }
+
+  h2 {
+    font-size: 1.2rem;
+  }
+
+  h3 {
+    margin: 0.5rem 0;
+  }
+
+  .header {
+    padding: 0.75rem 3rem;
+  }
+
+  .page {
+    padding: 4rem 0;
+  }
+
+  .page_wrapper {
+    width: 85%;
+  }
+
+  .contact, .navigation {
+    display: none;
+  }
+
+  .home_img, .about_img {
+    height: 125px;
+    width: 125px;
+  }
+
+  .home_header {
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    text-align: center;
+  }
+
+  .home_title {
+    margin: 0;
+  }
+
+  .home_navigation {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .about_list {
+    width: 100%;
+    grid-template-columns: 1fr 1fr;
+    margin-bottom: 0.5rem;
+    padding: 0;
+    font-size: 0.875rem;
+  }
+
+  .about_wrapper {
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  .projects_gallery {
+    flex-direction: column;
+  }
+
+  .projects_gallery_item {
+    width: 100%;
+  }
+
+  .projects_gallery_img {
+    width: 100%;
+    height: 150px;
+  }
+
+  .vertical_divider {
+    height: 1px;
+    width: 70%;
+    left: 15%;
+  }
+}
+
+@media (min-width:481px) and (max-width:1400px) {
+  /* portrait e-readers (Nook/Kindle), smaller tablets @ 600 or @ 640 wide. */
+
+  .page_wrapper {
+    width: 80%;
+  }
+
+  .about_list {
+    padding: 0 1.5rem;
+  }
+}
+
+@media (min-width:641px) and (max-width:1400px) {
+  /* portrait tablets, portrait iPad, landscape e-readers, landscape 800x480 or 854x480 phones */
+
+  h1 {
+    font-size: 3rem;
+  }
+
+  h2 {
+    font-size: 1.3rem;
+  }
+
+  .header {
+    padding: 1rem 3rem;
+  }
+
+  .page {
+    padding: 6rem 0;
+  }
+
+  .page_wrapper {
+    width: 75%;
+  }
+
+  .home_header {
+    flex-direction: row;
+    align-items: flex-end;
+    gap: 2rem;
+    text-align: left;
+  }
+  
+  .home_navigation {
+    flex-direction: row;
+    gap: 1rem;
+  }
+
+  .about_list {
+    padding: 0 2rem;
+    font-size: 1rem;
+  }
+
+  .home_img, .about_img {
+    height: 150px;
+    width: 150px;
+  }
+}
+
+@media (min-width:961px) and (max-width:1400px) {
+  /* tablet, landscape iPad, lo-res laptops ands desktops */
+
+  h1 {
+    font-size: 3.5rem;
+  }
+
+  .home_header {
+    gap: 3rem;
+  }
+  
+  .contact {
+    display: flex;
+  }
+
+  .page {
+    padding: 7rem 0;
+  }
+
+  .page_wrapper {
+    width: 65%;
+  }
+
+  .about_list {
+    padding: 0 3rem;
+  }
+
+  .home_img, .about_img {
+    height: 175px;
+    width: 175px;
+  }
+}
+
+@media (min-width:1025px) and (max-width:1400px) {
+  /* big landscape tablets, laptops, and desktops */
+
+  h1 {
+    font-size: 3.75rem;
+  }
+
+  h2 {
+    font-size: 1.4rem;
+  }
+
+  h3 {
+    margin: 1rem 0;
+  }
+
+  .contact_item {
+    padding: 0.5rem;
+  }
+
+  .about_wrapper {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    gap: 2rem;
+  }
+
+  .about_list {
+    padding: 0 2.5rem;
+  }
+}
+
+@media (min-width:1281px) and (max-width:1400px) {
+  /* hi-res laptops and desktops */
+
+  h1 {
+    font-size: 4rem;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+  }
+
+  .contact_item {
+    padding: 0.75rem;
+  }
+
+  .page {
+    padding: 8rem 0;
+  }
+
+  .page_wrapper {
+    width: 60%;
+  }
+
+  .home_img, .about_img {
+    height: 200px;
+    width: 200px;
+  }
+
+  .about_list {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 0 2rem;
+  }
+  
+}

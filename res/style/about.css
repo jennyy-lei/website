@@ -1,0 +1,27 @@
+#about {
+  /* background-color: var(--primary-color-2); */
+  /* color: var(--secondary-color); */
+}
+
+.about_wrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  gap: 2rem;
+}
+
+.about_title {
+  margin-bottom: 0;
+}
+
+.about_img {
+  height: 200px;
+  width: 200px;
+}
+
+.about_list {
+  display: grid;
+  width: 700px;
+  grid-template-columns: 1fr 1fr 1fr;
+  padding: 0 3rem;
+}

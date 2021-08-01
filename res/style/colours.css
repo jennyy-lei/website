@@ -1,0 +1,6 @@
+html {
+  --bg-color: rgb(255, 255, 255);
+  --transparent-bg-color: rgba(255, 255, 255, 0.75);
+  --primary-color: rgb(150, 144, 135);
+  --secondary-color: rgb(246, 245, 244);
+}

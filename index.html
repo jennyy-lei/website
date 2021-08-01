@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <title>Jenny Lei</title>
+    <link rel="stylesheet" type="text/css" href="res/style/colours.css" />
+    <link rel="stylesheet" type="text/css" href="res/style/style.css" />
+    <link rel="stylesheet" type="text/css" href="res/style/home.css" />
+    <link rel="stylesheet" type="text/css" href="res/style/about.css" />
+    <link rel="stylesheet" type="text/css" href="res/style/projects.css" />
+    <link rel="stylesheet" type="text/css" href="res/style/queries.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet"> -->
+    <link href="https://fonts.googleapis.com/css2?family=Karla:wght@300&family=Nunito:wght@300&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  </head>
+
+  <body>
+    <div class="header">
+      <div>Jenny Lei</div>
+
+      <div class="contact">
+        <a href="https://linkedin.com/in/jenny--lei" target="blank">
+          <button class="contact_item" data-tooltip="LinkedIn">
+            <svg viewBox="0 0 24 24" width="20" height="20" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+          </button>
+        </a>
+        <a href="https://github.com/jennyy-lei" target="blank">
+          <button class="contact_item" data-tooltip="GitHub">
+            <svg viewBox="0 0 24 24" width="20" height="20" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+          </button>
+        </a>
+        <a href="res/img/Resume_01:13_2.pdf" target="blank">
+          <button class="contact_item" data-tooltip="Resume">
+            <svg viewBox="0 0 24 24" width="20" height="20" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg>
+          </button>
+        </a>
+      </div>
+    </div>
+
+    <div class="navigation">
+      <button class="navigation_item home_nav" data-target="home">
+        <svg viewBox="0 0 24 24" width="20" height="20" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path><polyline points="9 22 9 12 15 12 15 22"></polyline></svg>
+        Home
+      </button>
+      <button class="navigation_item about_me_nav" data-target="about">
+        <svg viewBox="0 0 24 24" width="20" height="20" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg>
+        About Me
+      </button>
+      <button class="navigation_item projects_nav" data-target="projects">
+        <svg viewBox="0 0 24 24" width="20" height="20" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"></polyline><polyline points="8 6 2 12 8 18"></polyline></svg>
+        Projects
+      </button>
+    </div>
+
+    <div class="base_page" id="home">
+      <div class="home_bg"></div>
+      <div class="page_wrapper home_wrapper">
+        <div class="home_header">
+          <img class="home_img" src="res/img/Me.png" />
+          <div>
+            <h3>Hello! My name is</h3>
+            <h1 class="home_title">Jenny Lei</h1>
+          </div>
+        </div>
+        <div class="home_navigation">
+          <button class="home_navigation_item about_me_nav">About Me</button>
+          <button class="home_navigation_item projects_nav">Projects</button>
+          <button class="home_navigation_item work_nav">Work Experience</button>
+          <!-- <div></div> -->
+        </div>
+      </div>
+    </div>
+
+    <div class="page hidden_page about_me" id="about">
+      <div class="page_wrapper about_wrapper">
+        <div>
+          <div class="title_wrapper">
+            <div class="hr"></div>
+            <h2 class="about_title">About Me</h2>
+            <div class="hr"></div>
+          </div>
+          <p>I am currently a 2A Computer Science student at the University of Waterloo.</p>
+          <p>I love coding and developing software. Some of my best technical skills include</p>
+          <ul class="about_list">
+            <li>C/C++</li>
+            <li>Angular</li>
+            <li>JavaScript / TypeScript</li>
+          </ul>
+          <br />
+          <p>
+            Outside of academics and coding, I like to spend time on many of my hobbies.
+            I love drawing, or anything arts and crafts related, games, and playing lots of badminton.
+          </p>
+          <p>
+            I used to play badminton competitively and I'm currently a member of UW's varsity badminton team.
+          </p>
+        </div>
+        <img class="about_img" src="res/img/Hobbies.png" />
+      </div>
+    </div>
+
+    <div class="page hidden_page projects" id="projects">
+      <div class="page_wrapper projects_wrapper">
+        <div class="title_wrapper">
+          <div class="hr"></div>
+          <h2 class="projects_title">Projects</h2>
+          <div class="hr"></div>
+        </div>
+        <p>Check out my <a href="https://github.com/jennyy-lei" target="blank">GitHub</a> to see more of my projects!</p>
+        <div class="projects_gallery">
+          <div class="projects_gallery_item">
+            <img class="projects_gallery_img" style="object-position: left;" src="res/img/busymap.png" />
+            <div class="projects_gallery_description">
+              <div class="projects_gallery_title">VM</div>
+              <p>
+                A terminal text editor built using C++ with the NCurses library.
+              </p>
+            </div>
+          </div>
+          <div class="vertical_divider"></div>
+          <div class="projects_gallery_item">
+            <img class="projects_gallery_img" style="object-position: left;" src="res/img/busymap.png" />
+            <div class="projects_gallery_description">
+              <div class="projects_gallery_title">BusyMap</div>
+            </div>
+          </div>
+          <div class="vertical_divider"></div>
+          <div class="projects_gallery_item">
+            <img class="projects_gallery_img" style="object-position: left;" src="res/img/time.png" />
+            <div class="projects_gallery_description">
+              <div class="projects_gallery_title">Where's My Time</div>
+            </div>
+          </div>
+          <div class="vertical_divider"></div>
+          <div class="projects_gallery_item">
+            <img class="projects_gallery_img" style="object-position: left;" src="res/img/announcements.png" />
+            <div class="projects_gallery_description">
+              <div class="projects_gallery_title">Lisgar Announcements</div>
+            </div>
+          </div>
+          <div class="vertical_divider"></div>
+          <div class="projects_gallery_item">
+            <img class="projects_gallery_img" style="object-position: left;" src="res/img/visualizer.png" />
+            <div class="projects_gallery_description">
+              <div class="projects_gallery_title">Music Visualizer</div>
+            </div>
+          </div>
+          <div class="vertical_divider"></div>
+          <div class="projects_gallery_item">
+            <img class="projects_gallery_img" style="object-position: left;" src="res/img/conjugator.png" />
+            <div class="projects_gallery_description">
+              <div class="projects_gallery_title">Japanese Verb Conjugator</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="tooltip" style="display: none;">tooltip</div>
+
+    <div class="footer_wrapper">
+      Designed &amp; coded by Jenny Lei &middot; 2021
+    </div>
+
+    <script src="res/src/jquery-3.6.0.min.js"></script>
+    <script src="res/src/PageManager.js"></script>
+    <script src="res/src/app.js"></script>
+  </body>
+</html>

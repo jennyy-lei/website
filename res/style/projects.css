@@ -1,0 +1,48 @@
+#projects {
+  background-color: var(--secondary-color);
+  /* color: var(--secondary-color); */
+}
+
+.projects_gallery {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  flex-wrap: nowrap;
+  gap: 1.5rem;
+  padding: 1.5rem 0;
+  width: 100%;
+  overflow-x: auto;
+  border-radius: 0.25rem;
+}
+
+.projects_gallery_item {
+  align-self: flex-start;
+  flex: 1 0 auto;
+  width: 200px;
+}
+
+.projects_gallery_description {
+  width: 100%;
+  z-index: 1;
+  bottom: 0;
+  padding: 0.5rem;
+  transition: 0.1s;
+  border-radius: 0.25rem;
+  white-space: normal;
+}
+
+.projects_gallery_img {
+  height: 200px;
+  width: 200px;
+  object-fit: cover;
+  transition: 0.1s;
+  border-radius: 0.25rem;
+}
+
+.vertical_divider {
+  flex: 1 0 auto;
+  width: 1px;
+  height: 200px;
+  border-radius: 999px;
+  background-color: var(--primary-color);
+}
