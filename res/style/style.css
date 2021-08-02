@@ -4,6 +4,7 @@
 }
 
 html {
+  font-size: 18px;
   font-family: 'Nunito', sans-serif;
   background-color: var(--bg-color);
   color: var(--primary-color);
@@ -112,15 +113,27 @@ svg {
   color: var(--secondary-color);
 }
 
-.navigation {
+.navigation_wrapper {
   display: none;
   position: fixed;
-  top: 5rem;
+  top: 3rem;
   left: 3rem;
+  z-index: 1000;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.navigation_close {
+  background-color: transparent;
+  border: none;
+}
+
+.navigation {
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
-  z-index: 1000;
 }
 
 .navigation_item {
@@ -201,4 +214,8 @@ svg {
   border-radius: 0.25rem;
   z-index: 2000;
   border: 1px solid var(--primary-color);
+}
+
+.smallScreen {
+  display: none;
 }

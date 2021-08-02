@@ -25,8 +25,13 @@
     width: 85%;
   }
 
-  .contact, .navigation {
-    display: none;
+  .navigation_wrapper {
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-color: white;
+    gap: 2rem;
   }
 
   .home_img, .about_img {
@@ -81,6 +86,14 @@
     height: 1px;
     width: 70%;
     left: 15%;
+  }
+
+  .smallScreen {
+    display: block;
+  }
+
+  .largeScreen {
+    display: none;
   }
 }
 
@@ -152,9 +165,9 @@
   .home_header {
     gap: 3rem;
   }
-  
-  .contact {
-    display: flex;
+
+  .navigation {
+    left: 1.5rem;
   }
 
   .page {
@@ -172,6 +185,14 @@
   .home_img, .about_img {
     height: 175px;
     width: 175px;
+  }
+
+  .smallScreen {
+    display: none;
+  }
+
+  .largeScreen {
+    display: block;
   }
 }
 
@@ -194,6 +215,10 @@
     padding: 0.5rem;
   }
 
+  .navigation {
+    left: 2.5rem;
+  }
+
   .about_wrapper {
     display: flex;
     flex-direction: row;
@@ -203,6 +228,11 @@
 
   .about_list {
     padding: 0 2.5rem;
+  }
+
+  .projects_gallery_img {
+    width: 200px;
+    height: 200px;
   }
 }
 
@@ -219,6 +249,10 @@
 
   .contact_item {
     padding: 0.75rem;
+  }
+
+  .navigation {
+    left: 3rem;
   }
 
   .page {

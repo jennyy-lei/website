@@ -4,8 +4,8 @@
 }
 
 .projects_gallery {
-  display: flex;
-  flex-direction: row;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
   align-items: center;
   flex-wrap: nowrap;
   gap: 1.5rem;
@@ -32,8 +32,8 @@
 }
 
 .projects_gallery_img {
-  height: 200px;
-  width: 200px;
+  height: 250px;
+  width: 250px;
   object-fit: cover;
   transition: 0.1s;
   border-radius: 0.25rem;
