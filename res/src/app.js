@@ -25,6 +25,11 @@ window.onload = () => {
 
   setNavButtons();
   calcHomeBg();
+  navigation.toggle(
+    !isSmallScreen &&
+    $(window).scrollTop() >= $('.base_page').height(),
+    false
+  );
 
   window.onresize = () => {
     isSmallScreen = (window.innerWidth <= smallScreenThreshold);
@@ -32,24 +37,24 @@ window.onload = () => {
     calcHomeBg();
   }
 
-  window.onscroll = () => {
-    navigation.toggle(
-      !isSmallScreen &&
-      $(window).scrollTop() >= $('.base_page').height()
-    );
+  // window.onscroll = () => {
+  //   navigation.toggle(
+  //     !isSmallScreen &&
+  //     $(window).scrollTop() >= $('.base_page').height()
+  //   );
 
-    if (prevScrollTop) {
-      if ($(window).scrollTop() > prevScrollTop) {
-        // scroll down
-        header.hide();
-      } else if ($(window).scrollTop() < prevScrollTop ) {
-        // scroll up
-        header.show();
-      }
-    }
+  //   if (prevScrollTop) {
+  //     if ($(window).scrollTop() > prevScrollTop) {
+  //       // scroll down
+  //       header.hide();
+  //     } else if ($(window).scrollTop() < prevScrollTop ) {
+  //       // scroll up
+  //       header.show();
+  //     }
+  //   }
 
-    prevScrollTop = $(window).scrollTop();
-  }
+  //   prevScrollTop = $(window).scrollTop();
+  // }
 }
 
 $('[data-tooltip]').hover((ev) => {
@@ -67,28 +72,28 @@ let Header = function (initial, callback = () => {}) {
   let el = $('.header');
   let isShowing_ = initial;
 
-  this.show = (ignore = false) => {
+  this.show = (animate = true, ignore = false) => {
     if (isShowing_ != true || ignore) {
-      el.slideDown(200);
+      el.slideDown(animate ? 200 : 0);
       callback(true);
       isShowing_ = true;
     }
   }
 
-  this.hide = (ignore = false) => {
+  this.hide = (animate = true, ignore = false) => {
     if (isShowing_ != false || ignore) {
-      el.slideUp(200);
+      el.slideUp(animate ? 200 : 0);
       callback(false);
       isShowing_ = false;
     }
   }
 
-  this.toggle = (x, ignore = false) => {
+  this.toggle = (x, animate = true, ignore = false) => {
     if (x) this.show(ignore);
     else this.hide(ignore);
   }
 
-  this.toggle(initial, true);
+  this.toggle(initial, true, true);
 }
 
 let Navigation = function (slideTop) {
@@ -96,21 +101,23 @@ let Navigation = function (slideTop) {
   let initTop_ = parseInt(el.css('top')) || 0;
   let movedTop_ = slideTop;
 
-  this.show = () => el.slideDown(200);
+  this.show = (animate = true) => el.slideDown(animate ? 200 : 0);
 
-  this.hide = () => el.slideUp(200);
+  this.hide = (animate = true) => el.slideUp(animate ? 200 : 0);
 
   this.slideDown = () => {
     el.animate({top: movedTop_}, 200)
+    $('html').css('overflow', 'auto');
   }
 
   this.slideUp = () => {
     el.animate({top: initTop_}, 200)
+    $('html').css('overflow', 'auto');
   }
 
-  this.toggle = (x) => {
-    if (x) this.show();
-    else this.hide();
+  this.toggle = (x, animate = true) => {
+    if (x) this.show(animate);
+    else this.hide(animate);
   }
 
   this.slideToggle = (x) => {

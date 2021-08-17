@@ -4,39 +4,53 @@
 }
 
 .projects_gallery {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  align-items: center;
-  flex-wrap: nowrap;
-  gap: 1.5rem;
+  /* display: flex; */
+  /* grid-template-columns: 1fr 1fr 1fr; */
+  align-items: flex-start;
+  flex-wrap: wrap;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 2rem;
   padding: 1.5rem 0;
   width: 100%;
-  overflow-x: auto;
-  border-radius: 0.25rem;
 }
 
 .projects_gallery_item {
-  align-self: flex-start;
-  flex: 1 0 auto;
-  width: 200px;
+  /* align-self: flex-start; */
+  /* flex: 1 0 auto; */
+  width: 18vw;
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  overflow: hidden;
 }
 
 .projects_gallery_description {
   width: 100%;
   z-index: 1;
   bottom: 0;
-  padding: 0.5rem;
+  padding: 0.25rem 0.75rem;
   transition: 0.1s;
   border-radius: 0.25rem;
   white-space: normal;
 }
 
+.projects_description_title {
+  margin: 0.5rem 0;
+}
+
+.projects_description_text {
+  font-size: 0.75rem;
+}
+
 .projects_gallery_img {
-  height: 250px;
-  width: 250px;
+  height: 18vw;
+  width: 18vw;
   object-fit: cover;
   transition: 0.1s;
-  border-radius: 0.25rem;
+  box-shadow: 0 3px 10px 1px var(--secondary-color);
+  /* border-radius: 0.25rem; */
 }
 
 .vertical_divider {

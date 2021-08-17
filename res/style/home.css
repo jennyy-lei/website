@@ -43,7 +43,7 @@
 }
 
 .home_navigation_item {
-  color: tomato;
+  color: var(--accent-color);
   background-color: transparent;
   border: none;
   cursor: pointer;
@@ -59,7 +59,7 @@
   content: '';
   height: 1px;
   width: 0;
-  background-color: tomato;
+  background-color: var(--accent-color);
   position: absolute;
   top: 50%;
   transform: translateY(-50%);

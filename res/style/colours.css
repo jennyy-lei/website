@@ -1,7 +1,9 @@
 html {
   --bg-color: rgb(255, 255, 255);
   --transparent-bg-color: rgba(255, 255, 255, 0.75);
-  --primary-color: rgb(116, 109, 100);
-  /* --primary-color: rgb(150, 144, 135); */
-  --secondary-color: rgb(246, 245, 244);
+  --primary-color: #484a4f;
+  --secondary-color: #f7f7f7;
+  /* --primary-color: #643348;
+  --secondary-color: #f7f3f1; */
+  --accent-color: #f75151; /* #bf8663 */
 }
