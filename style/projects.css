@@ -58,6 +58,7 @@
   padding: 0.5rem 0;
   display: flex;
   flex-direction: row;
+  gap: 0.5rem;
 }
 
 .projects_description_links > * {
