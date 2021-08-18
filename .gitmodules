@@ -1,0 +1,3 @@
+[submodule "projects/Music-Visualizer"]
+	path = projects/Music-Visualizer
+	url = https://github.com/jennyy-lei/Music-Visualizer.git

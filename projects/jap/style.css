@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css?family=Quicksand:400,500');
+@import url('https://fonts.googleapis.com/earlyaccess/kokoro.css');
+@import url('https://fonts.googleapis.com/earlyaccess/notosanskannada.css');
+@import url('https://fonts.googleapis.com/css?family=Lato:300,400');
+
+html, body {
+	height: 100%;
+	width: 100%;
+	margin: 0;
+	font-family: 'Lato';
+	font-weight: 300;
+	color: slategrey;
+}
+
+body {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	letter-spacing: 1px;
+	background-color: #fdfefe;
+}
+
+#body_container {
+	width: 50%;
+	padding: 20px;
+}
+
+h2 {
+	text-transform: uppercase;
+	font-size: 1.5em;
+	font-weight: 300;
+	line-height: 1.5em;
+	letter-spacing: 3px;
+	margin: 0;
+}
+
+hr {
+	margin: 20px 0;
+}
+
+p {
+	margin: 0;
+	padding: 5px 0;
+	font-size: 1.2em;
+	font-weight: 300;
+}
+
+#kanji {
+	font-size: 3em;
+}
+
+#kana, #english, #answer_kana {
+	color: rgb(127, 127, 127);
+}
+
+#kana, #kanji, #answer_kana, #answer_kanji {
+	font-family: 'kokoro';
+}
+
+button {
+	color: slategrey;
+	border-radius: 0;
+	background-color: transparent;
+	padding: 15px;
+	margin: 5px 0;
+	border: none;
+	border-bottom: 1px solid transparent;
+	font-size: 1em;
+	font-family: 'Lato';
+	font-weight: 300;
+	outline: none;
+	text-transform: uppercase;
+	letter-spacing: 3px;
+	transition: color 0.5s;
+}
+
+#answer_btn {
+	margin-top: 0;
+	padding-top: 0;
+}
+
+button:hover {
+	cursor: pointer;
+	color: #b1bfcc;
+}
+
+#next_btn {
+	position: relative;
+	float: right;
+}
+
+#answer_kana, #answer_kanji {
+	visibility: hidden;
+}
+
+#answer_kanji {
+	font-size: 1.8em;
+}
+
+hr {
+	margin-left: 0;
+}
+
+.top-left, .top-right, .bottom-left, .bottom-right {
+	height: 10px;
+	width: 50%;
+	position: absolute;
+}
+
+.top-left {
+	top: 0;
+	left: 0;
+	background-color: slategrey;	
+}
+
+.top-right {
+	top: 0;
+	right: 0;
+	background-color: #b1bfcc;
+}
+
+.bottom-left {
+	top: 100%;
+	transform: translateY(-100%);
+	left: 0;
+	background-color: #b1bfcc;
+}
+
+.bottom-right {
+	top: 100%;
+	transform: translateY(-100%);
+	right: 0;
+	background-color: slategrey;
+}
+
+@media only screen and (max-width: 1000px) and (orientation: portrait) {
+	body {
+		font-size: 30px;
+	}
+
+	#body_container {
+		width: 90%;
+	}
+
+	p {
+		padding: 20px 0;
+	}
+
+	button {
+		margin: 20px 0;
+		padding: 20px;
+	}
+
+	.top-left, .top-right, .bottom-left, .bottom-right {
+		height: 20px;
+	}
+} 
