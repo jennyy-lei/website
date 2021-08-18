@@ -23,7 +23,8 @@
   display: flex;
   flex-direction: column;
   background-color: white;
-  overflow: hidden;
+  /* overflow: hidden; */
+  position: relative;
 }
 
 .projects_gallery_description {
@@ -51,6 +52,33 @@
   transition: 0.1s;
   box-shadow: 0 3px 10px 1px var(--secondary-color);
   /* border-radius: 0.25rem; */
+}
+
+.projects_description_links {
+  padding: 0.5rem 0;
+  display: flex;
+  flex-direction: row;
+}
+
+.projects_description_links > * {
+  color: var(--primary-color);
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0.25rem;
+  border-radius: 0.25rem;
+  transition: 0.075s;
+}
+
+.projects_description_links > *:hover {
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+}
+
+.projects_description_links svg {
+  height: 16px;
+  width: 16px;
 }
 
 .vertical_divider {
