@@ -2,6 +2,8 @@ let pageManager;
 let prevScrollTop = $(window).scrollTop();
 let isOverlayOpen = false;
 
+$('html').css('overflow', 'hidden');
+
 window.onload = () => {
   let reset = () => {
     if (isOverlayOpen) {
@@ -57,6 +59,18 @@ window.onload = () => {
 
   setNavButtons();
   calcHomeBg();
+
+  setupAnimation();
+  $('.loadingScreen').delay(1000).animate({
+    opacity: 0
+  }, {
+    duration: 500,
+    complete: () => {
+      $('.loadingScreen').remove();
+      $('html').css('overflow', 'auto');
+      animate();
+    }
+  })
 
   window.onresize = () => {
     isSmallScreen = (window.innerWidth <= smallScreenThreshold);
