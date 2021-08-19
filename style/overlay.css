@@ -1,0 +1,50 @@
+.overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  background-color: white;
+  height: 100%;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+}
+
+.overlay_content {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.overlay_close {
+  position: absolute;
+  top: -2.5rem;
+  background-color: transparent;
+  border: none;
+}
+
+.overlay_close svg {
+  height: 1rem;
+  width: 1rem;
+}
+
+.overlay_navigation {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.overlay_div {
+  height: 1px;
+  width: 0.5rem;
+  background-color: var(--primary-color);
+}
+
+.overlay_contact {
+  display: flex;
+  flex-direction: row;
+  gap: 0.5rem;
+}

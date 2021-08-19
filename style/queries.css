@@ -25,6 +25,14 @@
     width: 85%;
   }
 
+  .smallScreen {
+    display: flex;
+  }
+
+  .largeScreen {
+    display: none;
+  }
+
   .navigation_wrapper {
     left: 0;
     top: 0;
@@ -81,6 +89,11 @@
   .projects_gallery_img {
     width: 100%;
     height: 150px;
+  }
+
+  .spacer {
+    width: 0;
+    height: 0;
   }
 
   .vertical_divider {
@@ -185,12 +198,11 @@
   }
 
   .largeScreen {
-    display: block;
+    display: flex;
   }
 
   .projects_gallery {
     flex-direction: row;
-    gap: 2.5rem;
     padding: 1.5rem 1rem;
   }
 
@@ -201,6 +213,11 @@
   .projects_gallery_img {
     width: 28vw;
     height: 28vw;
+  }
+
+  .spacer {
+    width: 28vw;
+    height: 0;
   }
 }
 
@@ -279,7 +296,6 @@
 
   .projects_gallery {
     flex-direction: row;
-    gap: 1rem;
   }
 
   .projects_gallery_item {
@@ -290,5 +306,9 @@
     width: 19vw;
     height: 19vw;
   }
-  
+
+  .spacer {
+    width: 19vw;
+    height: 0;
+  }
 }
