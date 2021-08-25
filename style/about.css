@@ -1,13 +1,15 @@
-#about {
-  /* background-color: var(--primary-color-2); */
-  /* color: var(--secondary-color); */
-}
-
 .about_wrapper {
   display: flex;
   flex-direction: row;
   align-items: flex-end;
-  gap: 2rem;
+}
+
+.about_wrapper > * {
+  margin-right: 2rem;
+}
+
+.about_wrapper > *:last-child {
+  margin: 0;
 }
 
 .about_title {

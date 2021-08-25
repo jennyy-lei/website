@@ -16,7 +16,6 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 1.5rem;
 }
 
 .overlay_close {
@@ -34,17 +33,32 @@
 .overlay_navigation {
   display: flex;
   flex-direction: column;
-  gap: 0.5rem;
+}
+
+.overlay_navigation > * {
+  margin-bottom: 0.5rem;
+}
+
+.overlay_navigation > *:last-child {
+  margin-bottom: 0;
 }
 
 .overlay_div {
   height: 1px;
   width: 0.5rem;
+  margin: 1.5rem;
   background-color: var(--primary-color);
 }
 
 .overlay_contact {
   display: flex;
   flex-direction: row;
-  gap: 0.5rem;
+}
+
+.overlay_contact > * {
+  margin-right: 0.5rem;
+}
+
+.overlay_contact > *:last-child {
+  margin-right: 0;
 }
