@@ -27,3 +27,21 @@
   grid-template-columns: 1fr 1fr 1fr;
   padding: 0 3rem;
 }
+
+.about_list > * {
+  list-style: none;
+  position: relative;
+  padding-left: 0.75rem;
+}
+
+.about_list > *::before {
+  content: '';
+  height: 4px;
+  width: 4px;
+  background-color: var(--primary-color);
+  position: absolute;
+  border-radius: 999px;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 0;
+}
