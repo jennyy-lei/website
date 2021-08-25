@@ -25,7 +25,7 @@
   stroke-width:5px;
   stroke-dasharray: 1;
   stroke-dashoffset: 1;
-  animation: dash 1.5s ease-in forwards;
+  animation: draw 1.5s ease-in forwards;
 }
 
 .loading_end {
@@ -33,7 +33,7 @@
   animation: end 0.5s ease-in 1.5s forwards;
 }
 
-@keyframes dash {
+@keyframes draw {
   from {
     stroke-dashoffset: 1;
   }
