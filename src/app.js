@@ -61,7 +61,7 @@ window.onload = () => {
   calcHomeBg();
 
   setupAnimation();
-  $('.loadingScreen').delay(1000).animate({
+  $('.loadingScreen').delay(2250).animate({
     opacity: 0
   }, {
     duration: 500,

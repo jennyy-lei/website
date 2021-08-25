@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" type="text/css" href="style/colours.css" />
     <link rel="stylesheet" type="text/css" href="style/style.css" />
+    <link rel="stylesheet" type="text/css" href="style/loading.css" />
     <link rel="stylesheet" type="text/css" href="style/home.css" />
     <link rel="stylesheet" type="text/css" href="style/about.css" />
     <link rel="stylesheet" type="text/css" href="style/projects.css" />
@@ -19,7 +20,32 @@
 
   <body>
     <div class="loadingScreen">
-      loading...
+      <svg class="loading_svg" height="150" width="150" viewBox="0 0 207.08 208.02">
+        <defs>
+          <mask id="mask">
+            <path pathLength="1" class="loading_path" d="M206.47,115.51c-2.87-.4-12.68-3.37-14.89-2-1.27.79-3.46.54-4-.86-.25-.66-.35-6.78.65-9.4-10.16-1.58-11.45-14.89-12.38-16.8-20.22-41.65-57.94-44.7-69.49-44.38-29.88.84-21.92,2.86-32.95,3-3.86.06-47.48,24-53.67,68.35l-5.33,5.8L18.11,126l-.39,6.19-11.61,9.9" transform="translate(0.26 0.26)"/>
+            <path pathLength="1" class="loading_path" d="M13.06,157.7c1.37-7.93,2.81-16,4.84-24.7" transform="translate(0.26 0.26)"/>
+            <path pathLength="1" class="loading_path" d="M28.64,175.71l1.18-62.83L33,122s8.72-5.24,12.18-6.19c6.05-1.65,23.41,1,23.41,1l-1.06-16.22L78.85,72.45,75,95.08l3.87,18,2.71-4.83,5.22,4.06L97.42,109l16.83,3.68L107.48,97l-4.57-27.91,7.86,22.18,15.48,16.17,7.35,5.23L132.24,116s18.19,45.81,18.38,52.43c.41,13.74,2.9,22,.58,26.69" transform="translate(0.26 0.26)"/>
+            <line pathLength="1" class="loading_path" x1="31.61" y1="96.9" x2="26.83" y2="108.01"/>
+            <path pathLength="1" class="loading_path" d="M132.44,105.55l9.24,8.66s3.6-.71,4.76-1l-4-7.43,16.11,9.69,6.56-1,4.83,6-5.58-24.73L139,59.82S169.33,93.65,176.79,98" transform="translate(0.26 0.26)"/>
+            <path pathLength="1" class="loading_path" d="M158.54,115.51s4.9,46.69,3.2,70.52" transform="translate(0.26 0.26)"/>
+            <line pathLength="1" class="loading_path" x1="187.47" y1="117.2" x2="185.1" y2="131.25"/>
+            <polyline pathLength="1" class="loading_path" points="178.19 128.14 184.37 131.35 194.06 151.67"/>
+            <polyline pathLength="1" class="loading_path" points="38.62 120.36 43.7 135.26 42.84 154.14 46.19 157.58 49.66 161.13 69.36 167.37 92.75 169.32 131.17 163.08 145.92 152.6"/>
+            <line pathLength="1" class="loading_path" x1="46.83" y1="157.96" x2="42.82" y2="187.27"/>
+            <polyline pathLength="1" class="loading_path" points="87.57 170.1 87.57 178.66 77.74 184.92 65.23 200.45"/>
+            <polyline pathLength="1" class="loading_path" points="70.94 202.11 83.74 182.06 90.8 185.51 103.5 181.02 100.27 207.72"/>
+            <polyline pathLength="1" class="loading_path" points="98.8 170.1 98.8 179.46 112.45 184.53 114.01 190.19 115.28 206.74"/>
+            <path pathLength="1" class="loading_path" d="M54.25,120.9c-3.57,0-5,22.74,1.19,22.61C59,143.44,57.82,120.9,54.25,120.9Z" transform="translate(0.26 0.26)"/>
+            <path pathLength="1" class="loading_path" d="M103.38,119.68c-3.57,0-5,22.74,1.19,22.61C108.14,142.22,107,119.68,103.38,119.68Z" transform="translate(0.26 0.26)"/>
+          </mask>
+        </defs>
+        
+        <image width="207" height="207" mask="url(#mask)" xlink:href="res/loading_start.png"/>
+        <image width="207" height="207" class="loading_end" xlink:href="res/loading_end.png"/>
+      </svg>
+
+      <p>Welcome!</p>
     </div>
 
     <div class="header largeScreen animateGroup">

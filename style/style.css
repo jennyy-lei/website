@@ -88,20 +88,6 @@ svg {
   width: 60%;
 }
 
-/*
-  Loading Screen
-*/
-
-.loadingScreen {
-  position: fixed;
-  z-index: 1500;
-  background-color: white;
-  height: 100%;
-  width: 100%;
-  left: 0;
-  top: 0;
-}
-
 /* 
   Header
 */
