@@ -71,6 +71,10 @@
     margin-bottom: 1rem;
   }
 
+  .experience_list_item {
+    flex-direction: column;
+  }
+
   .projects_gallery {
     flex-direction: column;
     padding: 1.5rem;
@@ -192,6 +196,10 @@
 
   .largeScreen {
     display: flex;
+  }
+
+  .experience_list_item {
+    flex-direction: row;
   }
 
   .projects_gallery {
