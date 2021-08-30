@@ -9,6 +9,7 @@
     <link rel="stylesheet" type="text/css" href="style/loading.css" />
     <link rel="stylesheet" type="text/css" href="style/home.css" />
     <link rel="stylesheet" type="text/css" href="style/about.css" />
+    <link rel="stylesheet" type="text/css" href="style/experience.css" />
     <link rel="stylesheet" type="text/css" href="style/projects.css" />
     <link rel="stylesheet" type="text/css" href="style/overlay.css" />
     <link rel="stylesheet" type="text/css" href="style/queries.css" />
@@ -60,23 +61,27 @@
           About Me
         </button>
         <div class="navigation_div"></div>
-        <button class="navigation_item projects_nav animate" data-target="projects" data-anim-delay="3">
+        <button class="navigation_item experience_nav animate" data-target="experience" data-anim-delay="3">
+          Experience
+        </button>
+        <div class="navigation_div"></div>
+        <button class="navigation_item projects_nav animate" data-target="projects" data-anim-delay="4">
           Projects
         </button>
       </div>
 
       <div class="contact">
-        <a href="https://linkedin.com/in/jenny--lei" target="blank" class="animate" data-anim-delay="4">
+        <a href="https://linkedin.com/in/jenny--lei" target="blank" class="animate" data-anim-delay="5">
           <button class="contact_item" data-tooltip="LinkedIn">
             <svg viewBox="0 0 24 24" width="20" height="20" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
           </button>
         </a>
-        <a href="https://github.com/jennyy-lei" target="blank" class="animate" data-anim-delay="5">
+        <a href="https://github.com/jennyy-lei" target="blank" class="animate" data-anim-delay="6">
           <button class="contact_item" data-tooltip="GitHub">
             <svg viewBox="0 0 24 24" width="20" height="20" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
           </button>
         </a>
-        <a href="res/Resume_01:13_2.pdf" target="blank" class="animate" data-anim-delay="6">
+        <a href="res/Resume_07_21.pdf" target="blank" class="animate" data-anim-delay="7">
           <button class="contact_item" data-tooltip="Resume">
             <svg viewBox="0 0 24 24" width="20" height="20" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg>
           </button>
@@ -104,6 +109,9 @@
           </button>
           <button class="navigation_item about_me_nav" data-target="about">
             About Me
+          </button>
+          <button class="navigation_item experience_nav" data-target="experience">
+            Experience
           </button>
           <button class="navigation_item projects_nav" data-target="projects">
             Projects
@@ -147,7 +155,7 @@
       </div>
     </div>
 
-    <div class="page hidden_page about_me animateGroup" id="about">
+    <div class="page about_me animateGroup" id="about">
       <div class="page_wrapper about_wrapper">
         <div>
           <div class="title_wrapper animate">
@@ -175,7 +183,75 @@
       </div>
     </div>
 
-    <div class="page hidden_page projects animateGroup" id="projects">
+    <div class="page experience animateGroup" id="experience">
+      <div class="page_wrapper experience_wrapper">
+        <div class="title_wrapper animate">
+          <div class="hr"></div>
+          <h2 class="experience_title">Work Experience</h2>
+          <div class="hr"></div>
+        </div>
+        <div class="experience_list">
+          <div class="experience_list_item animate" data-anim-delay="1">
+            <div class="experience_list_item_date">May 2021 <br/> | <br/> Aug 2021</div>
+            <div class="experience_list_item_description">
+              <div class="experience_list_item_header">
+                <img class="experience_list_item_img" src="res/google_logo.png" />
+                <p class="experience_list_item_pos"><strong>STEP Intern</strong><br/>Google</p>
+              </div>
+              <ul class="experience_list_item_text">
+                <li>Worked on <span class="lang">Secure Payment Confirmation (SPC)</span> for <span class="lang">Chrome Web Payments</span>.</li>
+                <li>Wrote reliable code across multiple browser layers (chrome, content, and
+                  renderer) to implement the authentication UI for android with <span class="lang">Java</span> and the no
+                  credentials UI for desktop with <span class="lang">C++</span>.</li>
+                <li>Implemented Java unit tests using <span class="lang">Robolectric</span> and <span class="lang">Mockito</span> to ensure code
+                  functionality.</li>
+                <li>Completed accessibility checklist and prepared for UI implementation review,
+                  enabling android SPC to launch in Chrome’s M93 origin trial.</li>
+                <li>Took initiative to address product excellence by fixing a crashing bug to
+                  improve stability and adding/fixing failing tests to improve test coverage.</li>
+              </ul>
+            </div>
+          </div>
+          <div class="experience_list_item animate" data-anim-delay="2">
+            <div class="experience_list_item_date">Jan 2021 <br/> | <br/> Apr 2021</div>
+            <div class="experience_list_item_description">
+              <div class="experience_list_item_header">
+                <img class="experience_list_item_img" src="res/ssnc_logo.svg" />
+                <p class="experience_list_item_pos"><strong>Full Stack Developer</strong><br/>SS&C Technologies</p>
+              </div>
+              <ul class="experience_list_item_text">
+                <li>Worked in a fast-paced environment with other developers, designers, QA
+                  testers, and sales team members, to build a fully functional demo in 6 weeks</li>
+                <li>Used <span class="lang">Angular</span> with <span class="lang">TypeScript</span> and <span class="lang">RxJS</span>, and <span class="lang">Java</span> with <span class="lang">Spring Boot</span>.</li>
+                <li>Built global templates for dynamically rendered JSON forms and widget
+                  containers that will be used across other teams.</li>
+              </ul>
+            </div>
+          </div>
+          <div class="experience_list_item animate" data-anim-delay="3">
+            <div class="experience_list_item_date">Apr 2020 <br/> | <br/> Aug 2020</div>
+            <div class="experience_list_item_description">
+              <div class="experience_list_item_header">
+                <img class="experience_list_item_img" src="res/ep_logo.jpeg" />
+                <p class="experience_list_item_pos"><strong>Full Stack Developer Co-op</strong><br/>Evidence Partners</p>
+              </div>
+              <ul class="experience_list_item_text">
+                <li>Developed, designed, and tested endpoints for new public-facing RESTful APIs
+                  using <span class="lang">PHP</span> and <span class="lang">Lumen</span> framework, while following a CI/CD pipeline using
+                  Jenkins, JIRA, and BitBucket in an Agile environment.</li>
+                <li>Built a new authentication mechanism using JWTs. Includes a token
+                  invalidation system using MySQL to store invalid tokens and Kubernetes
+                  CronJobs to clear expired tokens.</li>
+                <li>Wrote unit and integration tests using <span class="lang">Postman</span>, <span class="lang">PHPUnit</span>, and <span class="lang">Behat</span> on top of
+                  a Selenium server.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="page projects animateGroup" id="projects">
       <div class="page_wrapper projects_wrapper">
         <div class="title_wrapper animate">
           <div class="hr"></div>

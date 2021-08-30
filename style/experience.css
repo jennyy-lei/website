@@ -1,0 +1,70 @@
+#experience {
+  background-color: var(--tertiary-color);
+}
+
+.experience_list {
+  padding-top: 1rem;
+}
+
+.experience_list_item {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 1.5rem;
+}
+
+.experience_list_item:last-child {
+  margin-bottom: 0;
+}
+
+.experience_list_item > * {
+  padding: 1rem;
+}
+
+.experience_list_item_date {
+  align-self: stretch;
+  text-align: center;
+  font-size: 0.75rem;
+  margin-right: 0.5rem;
+}
+
+.experience_list_item_description {
+  box-shadow: 0 3px 10px 1px var(--tertiary-shadow-color);
+  background-color: white;
+  flex: 1;
+}
+
+.experience_list_item_header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.experience_list_item_img {
+  height: 2.5rem;
+  width: 2.5rem;
+  margin-right: 1rem;
+}
+
+.experience_list_item_pos {
+  margin: 0;
+  line-height: 1.5rem;
+}
+
+.experience_list_item_text {
+  font-size: 0.75rem;
+  padding-left: 1.5rem;
+}
+
+.experience_list_item_text > * {
+  margin: 0.5rem 0;
+  line-height: 1.5;
+}
+
+.experience_list_item_text .lang {
+  /* background-color: var(--secondary-color); */
+  /* color: var(--accent-color); */
+  /* padding: 0 0.25rem; */
+  border-bottom: 1px solid var(--primary-color);
+  font-family: 'Karla', sans-serif;
+  letter-spacing: 1px;
+}

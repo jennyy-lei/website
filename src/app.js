@@ -35,6 +35,11 @@ window.onload = () => {
       pageManager.navigationTarget('#about');
     });
 
+    $('.experience_nav').click(() => {
+      reset();
+      pageManager.navigationTarget('#experience');
+    })
+
     $('.projects_nav').click(() => {
       reset();
       pageManager.navigationTarget('#projects');

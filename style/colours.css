@@ -2,7 +2,8 @@ html {
   --bg-color: rgb(255, 255, 255);
   --transparent-bg-color: rgba(255, 255, 255, 0.75);
   --primary-color: #484a4f;
-  --secondary-color: #f7f7f7;
+  --secondary-color: #f5f5f5;
+  --tertiary-color: #fafafa;
   /* --primary-color: #643348;
   --secondary-color: #f7f3f1; */
   --accent-color: #f75151; /* #bf8663 */
